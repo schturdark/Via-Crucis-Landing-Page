@@ -4,70 +4,8 @@
 	<meta charset="utf-8"/>
 	<meta name="apple-itunes-app" content="app-id=431498615"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Via Crucis: Catholic Meditations on the Way of the Cross by St. Francis of Assisi</title>
-
-	<style data-strip-on-export>
-	[contentEditable] {
-		outline: none;
-	}
-	#controls {
-		position: fixed;
-		/*background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));*/
-		padding: 10px;
-		top: 0px;
-		left: 0px;
-		right: 0px;
-		text-align: right;
-		z-index: 10;
-	}
-	#controls button {
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		-ms-appearance: none;
-		color: black;
-		background-color: white;
-		padding: 0.5em;
-		font-weight: bold;
-		border: none;
-		box-shadow: 0px 0px 3px gray;
-	}
-	#controls button:hover {
-		background-color: #eee;
-	}
-	</style>
-	<script data-strip-on-export>
-		var id = "431498615";
-		function exportHTML(route) {
-			var toStrip = document.querySelectorAll('[data-strip-on-export]');
-			for (var i=0; i<toStrip.length; i++) {
-				toStrip[i].parentElement.removeChild(toStrip[i]);
-			}
-			document.getElementById('content').removeAttribute('contentEditable');
-			var html = document.querySelector("html").outerHTML;
-			var form = document.createElement('form');
-			form.action = "/export";
-			form.method = "POST";
-			form.target = "_blank";
-			var setVal = function(name, val) {
-				var input = document.createElement("input");
-				input.type = "hidden";
-				input.name = name;
-				input.value = val;
-				form.appendChild(input);
-			}
-			setVal("html", html);
-			setVal("id", id);
-			setVal("route", route);
-			setVal("name", document.title);
-			form.style.display = "none";
-			document.body.appendChild(form);
-			form.submit();
-		}
-	</script>
-	
-
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<title>Via Crucis: Catholic Meditations on the Way of the Cross by St. Francis of Assisi App</title>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
 
 <style>
 @import url(http://fonts.googleapis.com/css?family=Raleway);
@@ -150,7 +88,7 @@ img.appstore {
 	max-width: 120px;
 }
 .iphone {
-	background-image: url('http://app-stop.appspot.com/static/5s.png');
+	background-image: url('5s.png');
 	background-size: contain;
 	position: relative;
 	width: 720px;
@@ -249,8 +187,8 @@ h1, h2, h3, h4, h5, h6 {
 <div id='splash'>
 	<div id='left'>
 		<h1>Via Crucis: Catholic Meditations on the Way of the Cross by St. Francis of Assisi</h1>
-		<p>Let the writings of St.</p>
-		<a href='https://itunes.apple.com/us/app/via-crucis-catholic-meditations/id431498615?mt=8&amp;uo=4'><img class='appstore' src='http://app-stop.appspot.com/static/appstore.svg' alt='Download on the Apple App Store'/></a>
+		<p>Let the writings of St. Francis of Assisi help you to meditate on the Way of the Cross of Jesus Christ.</p>
+		<a href='https://itunes.apple.com/us/app/via-crucis-catholic-meditations/id431498615?mt=8&amp;uo=4'><img class='appstore' src='appstore.svg' alt='Download on the Apple App Store'/></a>
 	</div>
 	<div id='right'>
 		<div class='iphone'>
@@ -292,29 +230,10 @@ Tap an image to enter full screen and swipe it to dismiss.
 Please pray for holy souls in Purgatory and also for me as I continue to develop Catholic apps.</p>
 
 <p>
-	<a href='https://itunes.apple.com/us/app/via-crucis-catholic-meditations/id431498615?mt=8&amp;uo=4'><img class='appstore' src='http://app-stop.appspot.com/static/appstore.svg' alt='Download on the Apple App Store'/></a>
+	<a href='https://itunes.apple.com/us/app/via-crucis-catholic-meditations/id431498615?mt=8&amp;uo=4'><img class='appstore' src='appstore.svg' alt='Download on the Apple App Store'/></a>
 </p>
 
-<p>
-	<div id='like-container'></div>
-	<script>
-	// dynamically create a Facebook like button for the current URL:
-	var like = document.createElement("div");
-	like.className = "fb-like";
-	like.setAttribute("data-href", location.href);
-	like.setAttribute("data-layout", "button_count");
-	like.setAttribute("data-action", "like");
-	like.setAttribute("data-show-faces", "true");
-	like.setAttribute("data-share", "true");
-	document.getElementById("like-container").appendChild(like);
-	</script>
-</p>
-
-<p id='copyright'>&copy; Valent Richie </p>
-
-<p id='attribution'>
-Landing page created automatically with <a href='http://app-stop.appspot.com'>AppStop</a></p>
-
+<p id='copyright'>&copy; 2014 Valent Richie </p>
 
 </div>
 
